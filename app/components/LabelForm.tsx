@@ -19,7 +19,7 @@ export default function LabelForm({ onAdd, initialData }: LabelFormProps) {
   const [code, setCode] = useState('');
   const [size, setSize] = useState('');
   const [mrp, setMrp] = useState('');
-  const [copies, setCopies] = useState<string | number>(1);
+  const [copies, setCopies] = useState<string | number>('');
 
   React.useEffect(() => {
     if (initialData) {
